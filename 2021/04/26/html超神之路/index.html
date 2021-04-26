@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="如何从零开始搭建一个好看的博客, HTML, CSS, JavaScript, JQuery, React, Vue.js等">
+    <meta name="keywords" content="html超神之路, HTML, CSS, JavaScript, JQuery, React, Vue.js等">
     <meta name="description" content="Web初学者,专注前端，分享音乐,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>如何从零开始搭建一个好看的博客 | Tkai-Blog</title>
+    <title>html超神之路 | Tkai-Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">如何从零开始搭建一个好看的博客</h1>
+                    <h1 class="description center-align post-title">html超神之路</h1>
                 </div>
             </div>
         </div>
@@ -432,8 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                <span class="chip bg-color">博客搭建</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">前端笔记</span>
                             </a>
                         
                     </div>
@@ -448,7 +448,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-24
+                    2021-04-26
                 </div>
                 
 
@@ -464,79 +464,121 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="如何从零开始搭建一个好看的博客"><a href="#如何从零开始搭建一个好看的博客" class="headerlink" title="如何从零开始搭建一个好看的博客"></a>如何从零开始搭建一个好看的博客</h1><h2 id="一-注册GitHub账号并创建仓库"><a href="#一-注册GitHub账号并创建仓库" class="headerlink" title="一. 注册GitHub账号并创建仓库"></a>一. 注册GitHub账号并创建仓库</h2><p>–<a target="_blank" rel="noopener" href="https://github.com/">GitHub官网</a></p>
-<p><em>1. 注册和登录</em><br><img src="https://img-blog.csdnimg.cn/20210424192635552.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70" alt="注册"><br><em>2. 然后创建仓库</em><br><img src="https://img-blog.csdnimg.cn/2021042419274241.png"><br><strong>需仓库名需和用户名一致，格式为：名字.github.io</strong><br><img src="https://img-blog.csdnimg.cn/20210424192917959.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70"></p>
-<h2 id="二-nodejs下载安装及配置环境"><a href="#二-nodejs下载安装及配置环境" class="headerlink" title="二.nodejs下载安装及配置环境"></a>二.nodejs下载安装及配置环境</h2><p><em>1. 下载安装nodejs:</em><br>    <a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">下载地址</a><br><img src="https://img-blog.csdnimg.cn/20210424193215423.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70"><br><em>安装图示</em><br><img src="https://img-blog.csdnimg.cn/20210424193357600.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70"><br>   &emsp;&emsp;<em>安装完之后打开<strong>终端 window+R</strong>，输入命令：“<strong>node -v</strong>” 查看版本号，出现版本号，说明你的电脑上已经有nodejs，安装成功！</em></p>
-<p>   安装好默认有npm。验证npm  输入npm -v 出现版本号表示安装成功</p>
-<p><em>2.  配置环境(<strong>window + R</strong>):</em></p>
-<p><strong>为什么需要配置环境:</strong></p>
-<p>&emsp;&emsp;NodeJS和NPM安装好了以后并不能直接使用，默认情况下，NPM安装的模块并不会安装到NodeJS的程序目录，比如我们安装的时候设置的D盘，“D:\Program Files\nodejs”，而我们使用npm安装一个cluster模块他会出现在C盘默认的路径下面，所以，如果我们不修改npm的模块安装目录，那么它默认情况下都会安装到这里，随着你测试开发各种不同的项目，安装的模块越来越多，这个文件夹的体积就会越来越大，直到占满你的C盘。所以我们要修改npm的配置。</p>
-<p><strong>配置步骤</strong></p>
-<ol>
-<li>在nodejs文件夹下，创建两个为文件夹：node_global;  node_cache,并在node_global下新建node_modules文件夹</li>
-<li>使用下面命令将npm的全局模块目录和缓存目录配置到我们刚才创建的那两个目录</li>
+                <h1 id="html超神之路"><a href="#html超神之路" class="headerlink" title="html超神之路"></a>html超神之路</h1><h2 id="一-认识标签"><a href="#一-认识标签" class="headerlink" title="一.认识标签:"></a>一.认识标签:</h2><p>两类 单标签和双标签</p>
+<h2 id="二-标签的关系"><a href="#二-标签的关系" class="headerlink" title="二.标签的关系:"></a>二.标签的关系:</h2><p> 包含关系(嵌套关系/父子关系)  并列关系</p>
+<h2 id="三-常见浏览器"><a href="#三-常见浏览器" class="headerlink" title="三.常见浏览器:"></a>三.常见浏览器:</h2><p> 浏览器是网页运行的平台，常用的浏览器有 <strong>IE、火狐（Firefox）、谷歌（Chrome）、Safari 和 Opera</strong> 等,我们平时称为五大浏览器。*</p>
+<p><strong>补充:生成或取消注释的方式:</strong> <code>ctrl + /</code></p>
+<h2 id="4-骨架标签解读"><a href="#4-骨架标签解读" class="headerlink" title="4.骨架标签解读:"></a>4.骨架标签解读:</h2><p><img src="https://img-blog.csdnimg.cn/20210426111128790.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70"></p>
+<h2 id="5-常用标签"><a href="#5-常用标签" class="headerlink" title="5.常用标签:"></a>5.常用标签:</h2><ol>
+<li><strong>h1—h6</strong> &emsp;&emsp;标题标签用来描述标题的</li>
+<li><strong>p</strong> &emsp;&emsp;段落标签 用于描述网页中的 段落文本</li>
+<li><strong>br</strong> &emsp;&emsp;换行标签 可以实现 段落内的换行</li>
+<li><strong>hr</strong> &emsp;&emsp;水平线标签</li>
+<li><strong>div</strong> &emsp;&emsp;表示分割的意思, 只用于对网页进行布局划分</li>
+<li><strong>span</strong>  &emsp;&emsp;描述文字 或者一些修饰性的内容,行内标签</li>
+<li><strong>a标签</strong><br>格式:&lt;a href=”跳转目标” target=”目标窗口的弹出方式”&gt;文本或图像</a><br>href：指定 跳转地址 。可以是网络地址, 也可以是相对地址<br>target：用于指定链接页面的打开方式:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_self 为在当前窗口打开（默认值）。</span><br><span class="line">_blank 为在新窗口中打开方式。</span><br></pre></td></tr></table></figure></li>
+<li><strong>img图像标签</strong><br>&lt;img src=”图像URL” /&gt;<br>src 属性用于指定图像文件的路径和文件名，他是 img 标签的必需属性。<br>alt 属性用于指定图片未找到时，显示的内容。</li>
+<li><strong>列表标签</strong></li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;node_global文件的路径&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;node_cache的文件路径&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  无序列表</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;li&gt;列表项1&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">有序列表 </span><br><span class="line">&lt;ol&gt;</span><br><span class="line">    &lt;li&gt;列表项1&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br><span class="line">自定义列表</span><br><span class="line">&lt;dl&gt;</span><br><span class="line">    &lt;dt&gt;名词1&lt;/dt&gt;</span><br><span class="line">    &lt;dd&gt;名词1解释1&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
 
-<ol start="3">
-<li>高级系统设置——环境变量<br>新增系统变量：<br>变量名填：NODE_PATH<br>变量值填：（文件路径）<strong>node_global下node_modules的路径</strong></li>
+
+
+<h2 id="六-关于路径"><a href="#六-关于路径" class="headerlink" title="六.关于路径:"></a><strong>六.关于路径:</strong></h2><ol>
+<li><strong>相对路径</strong></li>
 </ol>
-<p><strong>修改用户变量中Path下的node.js的路径，改为node_global的文件路径</strong></p>
-<p><img src="https://img-blog.csdnimg.cn/20210424194956889.png#pic_center"></p>
-<ol>
-<li> 修改完成后测试：输入命令：node 回车——再输入 require(‘cluster’)<br>出现以下内容说明配置完成 <img src="https://img-blog.csdnimg.cn/20210424195306972.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70"></li>
-<li>使用npm使用国内淘宝镜像的方法:<br>命令</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<p>验证命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-
-<p>如果返回<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org,说明镜像配置成功./">https://registry.npm.taobao.org，说明镜像配置成功。</a><br> 或者</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
-
-<p>有返回信息不报错就配置成功了</p>
-<h2 id="三，Git安装"><a href="#三，Git安装" class="headerlink" title="三，Git安装"></a>三，Git安装</h2><p>Git官网下载，网站地址：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p>下载完安装</p>
-<h2 id="四，下载-hexo-script-的安装脚本（使用Git-Bash-Here）"><a href="#四，下载-hexo-script-的安装脚本（使用Git-Bash-Here）" class="headerlink" title="四，下载[hexo-script]的安装脚本（使用Git Bash Here）"></a>四，下载[hexo-script]的安装脚本（使用Git Bash Here）</h2><ol>
-<li>只需要在某个目录下（在D盘下建个博客文件夹）,打开git bash然后执行下面这条命令即可下载完成</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/install.sh</span><br></pre></td></tr></table></figure>
-<p>但更建议直接在releases下载,选择最新版本,只需下载install.sh即可，网址：<a target="_blank" rel="noopener" href="https://github.com/kjhuanhao/hexo-script/releases">https://github.com/kjhuanhao/hexo-script/releases</a><br><img src="https://img-blog.csdnimg.cn/2021042420011552.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><em>•    相对当前文件<br>•    同一级目录下，输入图像文件的名称即可 &lt;img src=”avatar.jpg” /&gt;。<br>•    图像文件位于当前文件的下一级目录：输入文件夹名和文件名，之间用/隔开，如&lt;img src=”img/avatar.jpg” /&gt;。<br>•    图像文件位于当前文件的上一级目录：在文件名之前加../ ，如果是上两级，则需要使用 ../ ../，以此类推，&lt;img src=”../avatar.jpg” /&gt;。</em></p>
 <ol start="2">
-<li>检测node.js环境<br>在存放install.sh脚本的目录中,右键打开git bash然后运行以下命令: </li>
+<li><strong>绝对路径</strong></li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> install.sh test_node</span><br></pre></td></tr></table></figure>
-<p>出现了版本号和成功的提示信息代表配置成功. 如果你并发现有版本号的出现,而是红色的错误信息,你可能需要手动配置node.js的环境变量,或者重新安装node.js并注意勾选Add to PATH</p>
-<ol start="3">
-<li><p>检测git环境</p>
-<p>&emsp;&emsp;如果你想要检测git环境或者查看当前git的版本号,您可以在存放install.sh脚本的目录中,右键打开git bash运行以下命令: source install.sh test_git<br>&emsp;&emsp;一般情况下安装git工具后git环境是会自动配置的,可以无需检测git环境.此脚本可以用于linux系统,出现版本号信息则配置为成功.</p>
-</li>
-<li><p>一键安装hexo博客<br>在存放install.sh脚本的目录中,右键打开git bash运行以下命令</p>
-</li>
+<p><em>•    本地绝对路径 D:\web\img\avatar.jpg<br>•    网络路径:<br><a target="_blank" rel="noopener" href="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=586984b5572c11dfded1b8255b1c05ed/bd3eb13533fa828b9caedeb5fd1f4134960a5ad2.jpg">https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=586984b5572c11dfded1b8255b1c05ed/bd3eb13533fa828b9caedeb5fd1f4134960a5ad2.jpg</a></em></p>
+<h2 id="七-文本格式化标签"><a href="#七-文本格式化标签" class="headerlink" title="七.文本格式化标签"></a><strong>七.文本格式化标签</strong></h2><ol>
+<li><strong>斜体/加粗 &lt;em&gt; &lt;strong&gt;</strong><br>em 标签用于表示一段内容中的着重点。strong 标签用于表示一个内容的重要性。</li>
+<li><strong>斜体/加粗 &lt;i&gt; &lt;b&gt;</strong><br>单纯的表示斜体/加粗，没有语义化。所以根据html5标准，当我们只想设置文本特殊显示，而不需要强调内容时就可以使用i和b标签。</li>
+<li><strong>上标/下标 <sup> <sub></strong><br>比如: 5&lt;sup&gt;2&lt;sup&gt;  &emsp;H&lt;sub&gt;2&lt;/sub&gt;O。</li>
+<li><strong>下划线/删除线 &lt;ins&gt; &lt;del&gt;</strong></li>
+<li><strong>引用文本 &lt;blockquote&gt; 和 &lt;q&gt;</strong><br>blockquote 用于长引用， q 用于短引用。</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> install.sh hexo_win</span><br></pre></td></tr></table></figure>
+<h2 id="八-转义字符"><a href="#八-转义字符" class="headerlink" title="八.转义字符"></a>八.转义字符</h2><p>在HTML中预留了一些字符。这些预留字符是不能在网页中直接使用的。<br>比如我们不能直接在页面中使用 &lt; 和 &gt; 号，因为浏览器会将它解析为html标签。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">•	空格 &amp;nbsp; &amp;<span class="comment">#160;</span></span><br><span class="line">•	小于号 &amp;lt; &amp;<span class="comment">#60;</span></span><br><span class="line">•	大于号 &amp;gt; &amp;<span class="comment">#62;</span></span><br><span class="line">•	和符号&amp; &amp;amp;</span><br><span class="line">•	版权© &amp;copy;</span><br><span class="line">•	注册商标® &amp;reg;</span><br><span class="line">•	商标™ &amp;trade;</span><br></pre></td></tr></table></figure>
 
-<p>等待一会，当您看到出现<code>Please run hexo s to check it out!</code>的提示,证明您已经安装成功,此时你可以运行hexo s 然后查看你的博客<br><img src="https://img-blog.csdnimg.cn/20210424200400920.png"><br>**注意:**得先cd到hexoblog目录或在hexoblog下使用Bush再输入hexo s<br><img src="https://img-blog.csdnimg.cn/20210424200449529.png" alt="在这里插入图片描述"><br>当看到出现了一段地址:<a href="http://localhost:4000时，复制到浏览器打开，就可以本地预览了">http://localhost:4000时，复制到浏览器打开，就可以本地预览了</a><br><img src="https://img-blog.csdnimg.cn/20210424200511863.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<ol start="5">
-<li>一键生成SSH秘钥<br>在存放install.sh脚本的目录中,右键打开git bash运行以下命令: ./install.sh git_ssh<br><img src="https://img-blog.csdnimg.cn/20210424200630435.png"><br>可以看到会有四条可执行命令,输入对应数字可以执行对应的命令:</li>
-</ol>
-<p><strong>1)Key 执行1后可以一键生成秘钥</strong><br>如果你的电脑已经存在秘钥,程序将会自动退出<br><strong>2)SSH 执行2后可以查看你电脑中已生成的秘钥]</strong><br><strong>3)Verify-github 执行3后可以检查秘钥是否配置github成功</strong><br><strong>4)Verify-coding 执行4后可以检查秘钥是否配置coding成功</strong><br>生成秘钥后别忘记将秘钥添加到账号里,否则秘钥不会配置成功</p>
-<p><strong><em>(注意：复制密匙配置到github）</em></strong></p>
-<ol start="6">
-<li>一键部署hexo博客<br>在存放install.sh脚本的目录中,右键打开git bash运行以下命令:</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> install.sh deploy</span><br></pre></td></tr></table></figure>
-
-<p>然后将生成的up.sh复制到hexoblog文件,也就是复制到你的博客根目录下（执行7）<br>然后在存放up.sh脚本的目录中,右键打开git bash运行以下命令: source up.sh<br>之后即可自动部署到你的github或者coding上</p>
+<h2 id="九-表格标签"><a href="#九-表格标签" class="headerlink" title="九.表格标签"></a>九.表格标签</h2><p>表格结构:<br><img src="https://img-blog.csdnimg.cn/20210426123812747.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70"><br>表格属性:<br><img src="https://img-blog.csdnimg.cn/20210426123837715.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70"></p>
+<p>合并单元格:<br>•    rowspan 单元格所占行<br>•    colspan 单元格所占列</p>
+<h2 id="十-表单"><a href="#十-表单" class="headerlink" title="十.表单"></a>十.表单</h2><p><strong>&lt;form&gt; 标签:</strong><br>定义表单，用户输入的信息都要包含在form标签中，点击提交后，&lt;form&gt;和&lt;/form&gt;里面包含的数据将被提交到服务器。<br><strong>格式:</strong><br>&lt;form <strong>action</strong>＝”url” <strong>method</strong>=get|post name=”myform” &gt;&lt;/form&gt;<br>•    name：表单提交时的名称<br>•    action：提交到的地址<br>•    method：提交方式，默认为get<br><strong>表单控件</strong>:<br>每个表单元素都可以定义一个name属性，指定控件的名称。当提交信息时，会作为区分用户所填数据的标识发送给后台。</p>
 <ol>
-<li>部署博客之前必要的配置：<br>打开根目录配置文件_config.yml<br><img src="https://img-blog.csdnimg.cn/202104242008591.png"><br>找到deploy,它一般在最后一行,按照以下的格式修改即可<br><img src="https://img-blog.csdnimg.cn/20210424200914489.png"><br>repo: 这里填你的仓库地址,建议使用SSH地址,它是以git开头的<br><img src="https://img-blog.csdnimg.cn/20210424200930390.png"><h2 id="五-配置主题"><a href="#五-配置主题" class="headerlink" title="五.配置主题"></a>五.配置主题</h2></li>
-<li>下载主题<br>hexo-theme-matery 是一个采用 Material Design 和响应式设计的 Hexo 博客主题，点击 <a target="_blank" rel="noopener" href="https://tankaicll.gitee.io/">这里</a> 可以查看示例效果。点击 <a target="_blank" rel="noopener" href="https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master">这里</a> （<a target="_blank" rel="noopener" href="https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master%EF%BC%89%E4%B8%8B%E8%BD%BD">https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master）下载</a> master 分支的最新稳定版的代码，解压缩后，将 hexo-theme-matery 的文件夹复制到 Hexo 的 themes 文件夹中即可。</li>
-<li>切换主题<br>修改 Hexo 根目录下的 _config.yml 的 theme 的值：theme: hexo-theme-matery</li>
-<li>上传</li>
+<li><strong>单行文本输入框</strong></li>
 </ol>
-<p><strong>hexo clean</strong> #清除缓存 ,网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹<br><strong>hexo g</strong> #生成静态网页 (执行 $ hexo g后会在站点根目录下生成public文件夹, hexo会将”/blog/source/“ 下面的.md后缀的文件编译为.html后缀的文件,存放在”/blog/public/ “ 路径下)<br><strong>hexo s</strong> 本地预览<br><strong>hexo d</strong> #自动生成网站静态文件，并将本地数据部署到设定的仓库(如github)</p>
-<p><em>最后在gitee中的服务Gitee Pages下重新更新</em><br><img src="https://img-blog.csdnimg.cn/20210424201435750.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NzQ5OTAx,size_16,color_FFFFFF,t_70"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;user&quot;</span> value=<span class="string">&quot;请输入用户名&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
+<p> value属性: 输入框的值</p>
+<ol start="2">
+<li><strong>密码输入框</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;password&quot;</span> name=<span class="string">&quot;pwd&quot;</span> value=<span class="string">&quot;&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
+<p>value属性: 输入的密码</p>
+<ol start="3">
+<li><strong>单选按钮</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;radio&quot;</span> name=<span class="string">&quot;sex&quot;</span> value=<span class="string">&quot;0&quot;</span> checked/&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;radio&quot;</span> name=<span class="string">&quot;sex&quot;</span> value=<span class="string">&quot;1&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>约定: 0代表男,1代表女<br><strong>性别选择 name属性必须相同</strong><br>value属性 选中单选框的值<br>checked 单选框是否被选中</p>
+<ol start="4">
+<li><strong>复选框</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;checkbox&quot;</span> name=<span class="string">&quot;like&quot;</span> checked value=<span class="string">&quot;0&quot;</span>/&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;checkbox&quot;</span> name=<span class="string">&quot;like&quot;</span> value=<span class="string">&quot;1&quot;</span>/&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;checkbox&quot;</span> name=<span class="string">&quot;like&quot;</span> value=<span class="string">&quot;2&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+<p>约定: 0代表篮球,1代表足球,2代表排球<br>value属性: 选中的复选框的值<br>checked 是否被选中</p>
+<ol start="5">
+<li><strong>文件上传</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;file&quot;</span> name=<span class="string">&quot;file&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li><strong>下拉框</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;select name=<span class="string">&quot;city&quot;</span>&gt;</span><br><span class="line">    &lt;option value=<span class="string">&quot;1&quot;</span>&gt;北京&lt;/option&gt;</span><br><span class="line">    &lt;option value=<span class="string">&quot;2&quot;</span>&gt;上海&lt;/option&gt;</span><br><span class="line">    &lt;option value=<span class="string">&quot;3&quot;</span> selected&gt;广州&lt;/option&gt;    </span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+<p>value属性用来给<option>指定的那一个选项赋值<br>selected 是否被选中</p>
+<ol start="7">
+<li><strong>多行文本输入框</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea name=<span class="string">&quot;text&quot;</span> id=<span class="string">&quot;&quot;</span> cols=<span class="string">&quot;30&quot;</span> rows=<span class="string">&quot;10&quot;</span>&gt;&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
+<p>rows:文字区块的宽度<br>cols:文字区块的高</p>
+<ol start="8">
+<li><strong>提交按钮</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;submit&quot;</span> value=<span class="string">&quot;提交&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="9">
+<li><strong>普通按钮</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;button&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="10">
+<li><strong>重置按钮</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;reset&quot;</span> value=<span class="string">&quot;重置&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<p>对于以上按钮, value:指定按钮上显示的文字</p>
+<ol start="11">
+<li><strong>图片按钮</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">&quot;image&quot;</span> src=<span class="string">&quot;URL&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="12">
+<li><strong>&lt;label&gt;标签</strong><br>label为 input 元素定义标注,是input的描述，它本身不会有特殊效果，但它和input标签配合使用可以<em>提升用户的使用体验</em>，让用户点击label标签时，就像点击了这个输入框。通过label的for指向按钮的id来绑定，<strong>for和id属性的值要相同</strong></li>
+</ol>
+<p><em><label>标签一般和radio、checkbox类型一起使用。</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;form&gt;</span><br><span class="line">    &lt;label <span class="keyword">for</span>=<span class="string">&quot;male&quot;</span>&gt;Male&lt;/label&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">&quot;radio&quot;</span> name=<span class="string">&quot;sex&quot;</span> id=<span class="string">&quot;male&quot;</span> /&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="13">
+<li><strong>&lt;fieldset&gt;元素集</strong><br>fieldset 元素可将表单内的相关元素分组，通常和legend标签一起用，legend标签定义了fieldset的提示信息。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;fieldset&gt;</span><br><span class="line">    &lt;legend&gt;健康信息&lt;/legend&gt;</span><br><span class="line">     身高：&lt;input <span class="built_in">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span><br><span class="line">     体重：&lt;input <span class="built_in">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span><br><span class="line">&lt;/fieldset&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="十一-表单补充属性"><a href="#十一-表单补充属性" class="headerlink" title="十一.表单补充属性"></a>十一.表单补充属性</h2><ul>
+<li>disabled 禁用</li>
+<li>readonly 只读</li>
+<li>placeholder 占位符提供可描述输入字段预期值的提示信息</li>
+<li>autofocus 元素自动获得焦点</li>
+</ul>
 
             </div>
             <hr/>
@@ -562,7 +604,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/child/2021/04/24/%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84%E5%8D%9A%E5%AE%A2/">http://example.com/child/2021/04/24/%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84%E5%8D%9A%E5%AE%A2/</a>
+                    <a href="http://example.com/child/2021/04/26/html%E8%B6%85%E7%A5%9E%E4%B9%8B%E8%B7%AF/">http://example.com/child/2021/04/26/html%E8%B6%85%E7%A5%9E%E4%B9%8B%E8%B7%AF/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -600,8 +642,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                    <span class="chip bg-color">博客搭建</span>
+                                <a href="/tags/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">前端笔记</span>
                                 </a>
                             
                         </div>
@@ -771,9 +813,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/04/26/html%E8%B6%85%E7%A5%9E%E4%B9%8B%E8%B7%AF/">
                     <div class="card-image">
@@ -791,9 +834,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -802,6 +845,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -820,13 +864,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/17/%E5%85%B3%E4%BA%8Esublime3%E4%B8%AD%E4%B8%8B%E8%BD%BD%E6%B1%89%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8F%8APackage-Control%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">
+                <a href="/2021/04/24/%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="关于sublime3中下载汉化配置及Package Control安装失败问题">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="如何从零开始搭建一个好看的博客">
                         
-                        <span class="card-title">关于sublime3中下载汉化配置及Package Control安装失败问题</span>
+                        <span class="card-title">如何从零开始搭建一个好看的博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -837,7 +881,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-24
                             </span>
                         <span class="publish-author">
                             
@@ -850,8 +894,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/web%E5%B7%A5%E5%85%B7/">
-                        <span class="chip bg-color">web工具</span>
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">博客搭建</span>
                     </a>
                     
                 </div>
