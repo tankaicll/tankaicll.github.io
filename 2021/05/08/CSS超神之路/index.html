@@ -1,0 +1,1486 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="前端之-css超神之路, HTML, CSS, JavaScript, JQuery, React, Vue.js等">
+    <meta name="description" content="Web初学者,专注前端，分享音乐,分享知识">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>前端之-css超神之路 | Tkai-Blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Tkai-Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Tkai-Blog</div>
+        <div class="logo-desc">
+            
+            Web初学者,专注前端，分享音乐,分享知识
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="http://tktktk.usa3v.net" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>小彩蛋
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="http://tktktk.usa3v.net" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="小彩蛋" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">前端之-css超神之路</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">前端笔记</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-05-08
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="字体文本系列"><a href="#字体文本系列" class="headerlink" title="字体文本系列"></a>字体文本系列</h1><h3 id="字体系列属性"><a href="#字体系列属性" class="headerlink" title="字体系列属性"></a>字体系列属性</h3><table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>属性作用</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>width</td>
+<td>宽度</td>
+<td>px / 百分数 / em 等</td>
+</tr>
+<tr>
+<td>height</td>
+<td>高度</td>
+<td>px / 百分数 / em 等</td>
+</tr>
+<tr>
+<td>background-color</td>
+<td>背景色</td>
+<td>red / #fff / rgb(255,255,255)</td>
+</tr>
+</tbody></table>
+<h3 id="字体系列属性-1"><a href="#字体系列属性-1" class="headerlink" title="字体系列属性"></a>字体系列属性</h3><table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>属性作用</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>color</td>
+<td>字体颜色</td>
+<td>red / #fff / rgb(255,255,255)</td>
+</tr>
+<tr>
+<td>font-size</td>
+<td>字体大小</td>
+<td>px em 等</td>
+</tr>
+<tr>
+<td>font-family</td>
+<td>字体</td>
+<td>微软雅黑 Microsoft YaHei、黑体 SimHei、Arial 等</td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td>字体加粗</td>
+<td>100-900.加粗 700-900/ bolder lighter normal</td>
+</tr>
+<tr>
+<td>font-style</td>
+<td>字体样式</td>
+<td>Italic 斜体 / normal 正常</td>
+</tr>
+<tr>
+<td>font</td>
+<td>字体缩写</td>
+<td>`font:italic bolder 20px/1.2 ‘Arial’,’Microsoft YaHei’</td>
+</tr>
+</tbody></table>
+<h3 id="font-family"><a href="#font-family" class="headerlink" title="font-family"></a>font-family</h3><p>可以同时指定多个字体</p>
+<p>例如： <code>p&#123;font-family:Arial , Helvetica , sans-serif&#125;</code></p>
+<p>如上我实际上指定了三种字体，那么到底使用的是哪个呢？浏览器会优先使用第一个，如果没有找到则使用第二个，以此类推。这里面 sans-serif 并不是指的具体某一个字体。而是一类字体。设置字体时,习惯使用sans-serif 兜底 ,选择任意一种无衬线字体 </p>
+<p><strong>字体分类</strong></p>
+<ul>
+<li><p>serif（衬线字体）</p>
+</li>
+<li><p>sans-serif（非衬线字体）</p>
+</li>
+<li><p>以上这些分类都是一些大的分类，并没有涉及具体的类型，如果将字体指定为这些格式，浏览器会自己选择指定类型的字体。</p>
+</li>
+</ul>
+<h2 id="文本系列属性"><a href="#文本系列属性" class="headerlink" title="文本系列属性"></a>文本系列属性</h2><h3 id="首行缩进"><a href="#首行缩进" class="headerlink" title="首行缩进"></a>首行缩进</h3><p><code>text-indent</code>: 设置段落开头缩进距离</p>
+<h3 id="文本的修饰"><a href="#文本的修饰" class="headerlink" title="文本的修饰"></a>文本的修饰</h3><p><code>text-decoration</code>属性，用来给文本添加各种修饰。通过它可以为文本的上方、下方或者中间添加线条。可选值：</p>
+<ul>
+<li><p><code>underline</code></p>
+</li>
+<li><p><code>overline</code></p>
+</li>
+<li><p><code>line-through</code></p>
+</li>
+<li><p><code>none</code></p>
+</li>
+</ul>
+<h3 id="字母间距和单词间距"><a href="#字母间距和单词间距" class="headerlink" title="字母间距和单词间距"></a>字母间距和单词间距</h3><ul>
+<li><p><code>letter-spacing</code> : 用来设置字符之间的间距。</p>
+</li>
+<li><p><code>word-spacing</code>: 用来设置单词之间的间距。</p>
+</li>
+</ul>
+<p>这两个属性都可以直接指定一个长度或百分数作为值。正数代表的是增加距离，而负数代表减少距离。</p>
+<h3 id="文本对齐"><a href="#文本对齐" class="headerlink" title="文本对齐"></a>文本对齐</h3><p><code>text-align</code>用于设置文本的对齐方式。</p>
+<p>可选值：</p>
+<ul>
+<li><p><code>left</code>：左对齐</p>
+</li>
+<li><p><code>right</code>：右对齐</p>
+</li>
+<li><p><code>center</code>：居中对齐</p>
+</li>
+</ul>
+<h3 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h3><p><code>line-height</code>用于设置行高，行高越大则行间距越大。</p>
+<h1 id="背景与溢出隐藏"><a href="#背景与溢出隐藏" class="headerlink" title="背景与溢出隐藏"></a>背景与溢出隐藏</h1><h2 id="背景图片属性"><a href="#背景图片属性" class="headerlink" title="背景图片属性"></a>背景图片属性</h2><table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>属性作用</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>background-color</td>
+<td>背景图片颜色</td>
+<td>color</td>
+</tr>
+<tr>
+<td>background-image</td>
+<td>背景图片</td>
+<td>url(‘1.png’);</td>
+</tr>
+<tr>
+<td>background-repeat</td>
+<td>平铺方式</td>
+<td>repeat 、 no-repeat 、 repeat-x 、 repeat-y</td>
+</tr>
+<tr>
+<td>background-position</td>
+<td>图片位置</td>
+<td>left、 right、 top、 bottom、 center</td>
+</tr>
+<tr>
+<td>background-attachment</td>
+<td>背景滚动</td>
+<td>scroll、fixed (注意：基于 body 的定位）</td>
+</tr>
+<tr>
+<td>background</td>
+<td>简写（顺序不能错）</td>
+<td>background: green url(1.jpg) no-repeat center center fixed;</td>
+</tr>
+</tbody></table>
+<p><img src="http://doc.bufanui.com/uploads/html-css/images/m_e83f1127d04e081a079c0bfad0fec98e_r.png"></p>
+<h2 id="CSS-Sprite-精灵图"><a href="#CSS-Sprite-精灵图" class="headerlink" title="CSS Sprite(精灵图)"></a>CSS Sprite(精灵图)</h2><p><strong>CSS Sprite原理：</strong>其实就是把网页中的一些背景图片整合到一张图片文件中，再利用<code>background-image</code>、<code>background-repeat</code>、<code>background-position</code>属性，对这张大图进行定位。<code>background-position</code>可以用数字能精确的定位出背景图片的位置。</p>
+<h1 id="透明度"><a href="#透明度" class="headerlink" title="透明度"></a>透明度</h1><h3 id="opacity"><a href="#opacity" class="headerlink" title="opacity"></a>opacity</h3><p>设置标签的透明度，整个元素都会透明默认值1，取值为0-1</p>
+<p>1为不透明，0为完全透明。</p>
+<p><code>p&#123; opacity: 0;&#125;</code>隐藏一个元素 ，完全不显示，但是会占空间，只是看不到。</p>
+<p><code>p&#123; opacity: 1;&#125;</code> 显示一个元素</p>
+<h3 id="rgba"><a href="#rgba" class="headerlink" title="rgba()"></a>rgba()</h3><p>设置颜色的透明度</p>
+<h1 id="显示和隐藏"><a href="#显示和隐藏" class="headerlink" title="显示和隐藏"></a>显示和隐藏</h1><ul>
+<li><p><code>display:none;</code> 隐藏元素，不再在文档中占据位置。</p>
+<ul>
+<li>显示：可以将 display 设置为其他属性值，不为 none 即可。</li>
+</ul>
+</li>
+<li><p><code>visibility:hidden;</code> 隐藏元素，隐藏后其在文档中所占的位置会依然保持，不会被其他元素覆盖。</p>
+</li>
+</ul>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">  .baidu &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*display 可以改变元素的表现形式*/</span></span><br><span class="line"></span><br><span class="line">    display: inline-block;</span><br><span class="line"></span><br><span class="line">    width: <span class="number">300</span>px;</span><br><span class="line"></span><br><span class="line">    height: <span class="number">300</span>px;</span><br><span class="line"></span><br><span class="line">    background-color: pink;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  .p1 &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*display:none;*/</span></span><br><span class="line"></span><br><span class="line">    visibility: hidden;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="overflow"><a href="#overflow" class="headerlink" title="overflow"></a>overflow</h1><p><code>overflow</code> 指定标签里面的内容超出了样式的宽度和高度时如何处理。</p>
+<ul>
+<li><p>visible：默认值</p>
+</li>
+<li><p>scroll：添加滚动条</p>
+</li>
+<li><p>auto：根据需要添加滚动条</p>
+</li>
+<li><p>hidden：隐藏超出盒子的内容</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">  .d1 &#123;</span><br><span class="line"></span><br><span class="line">    width: <span class="number">200</span>px;</span><br><span class="line"></span><br><span class="line">    height: <span class="number">200</span>px;</span><br><span class="line"></span><br><span class="line">    background-color: green;</span><br><span class="line"></span><br><span class="line">    overflow: auto;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*overflow: scroll;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    overflow: hidden;*/</span></span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h2 id="溢出的文字以省略号显示"><a href="#溢出的文字以省略号显示" class="headerlink" title="溢出的文字以省略号显示"></a>溢出的文字以省略号显示</h2>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">p&#123; </span><br><span class="line"></span><br><span class="line">  height: <span class="number">20</span>px; </span><br><span class="line"></span><br><span class="line">  width:<span class="number">100</span>px; </span><br><span class="line"></span><br><span class="line">  background:#ddd; </span><br><span class="line"></span><br><span class="line">  white-space: nowrap; <span class="comment">//让文字在同一行显示，不换行 </span></span><br><span class="line"></span><br><span class="line">  overflow: hidden; <span class="comment">//溢出部分隐藏 </span></span><br><span class="line"></span><br><span class="line">  text-overflow: ellipsis; <span class="comment">//文字溢出部分省略号显示 </span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;这段文字多余的部分会显示为省略号&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="定位布局"><a href="#定位布局" class="headerlink" title="定位布局"></a>定位布局</h1><h2 id="position-属性的作用"><a href="#position-属性的作用" class="headerlink" title="position 属性的作用"></a>position 属性的作用</h2><p><code>position</code>属性用来指定一个元素在网页上的位置，一共有5种定位方式，即<code>position</code>属性主要有五个值。</p>
+<p>元素定位之后，需要通过设置 <code>left/right</code> 和 <code>top/bottom</code> 值对元素定位。</p>
+<ul>
+<li><p><code>static</code></p>
+</li>
+<li><p><code>relative</code></p>
+</li>
+<li><p><code>fixed</code></p>
+</li>
+<li><p><code>absolute</code></p>
+</li>
+<li><p><code>sticky</code></p>
+</li>
+</ul>
+<h2 id="static-属性值"><a href="#static-属性值" class="headerlink" title="static 属性值"></a>static 属性值</h2><p><code>static</code>是<code>position</code>属性的默认值。如果省略<code>position</code>属性，浏览器就认为该元素是<code>static</code>定位。</p>
+<p>按照正常的文档流位置摆放元素。(未定位)</p>
+<h2 id="relative，absolute，fixed"><a href="#relative，absolute，fixed" class="headerlink" title="relative，absolute，fixed"></a>relative，absolute，fixed</h2><p><code>relative</code>、<code>absolute</code>、<code>fixed</code>这三个属性值有一个共同点，都是相对于某个<code>基点(参照物)</code>的定位，不同之处仅仅在于参照物不同。所以，只要理解了它们的参照物是什么，就很容易掌握这三个属性值。</p>
+<p>这三种定位都不会对其他元素的位置产生影响，因此元素之间可能产生重叠。</p>
+<h3 id="relative-属性值"><a href="#relative-属性值" class="headerlink" title="relative 属性值"></a>relative 属性值</h3><p><code>relative</code>表示，相对于默认位置（即<code>static</code>时的位置）进行偏移，即参照物是元素的默认位置。</p>
+<p>它必须搭配top、bottom、left、right这四个属性一起使用，用来指定偏移的方向和距离。</p>
+<h3 id="absolute-属性值"><a href="#absolute-属性值" class="headerlink" title="absolute 属性值"></a>absolute 属性值</h3><p><code>absolute</code>表示，相对于上级元素（一般是父元素）进行偏移，即参照物是离他最近的祖先定位元素或视口所在的 <code>html 根元素</code>进行定位。</p>
+<p>另外，<code>absolute</code>定位也必须搭配<code>top</code>、<code>bottom</code>、<code>left</code>、<code>right</code>这四个属性一起使用。</p>
+<h3 id="fixed-属性值"><a href="#fixed-属性值" class="headerlink" title="fixed 属性值"></a>fixed 属性值</h3><p><code>fixed</code>表示，相对于视口（<code>viewport</code>，浏览器窗口）进行偏移，即定位参照物是浏览器窗口。这会导致元素的位置不随页面滚动而变化，好像固定在网页上一样。</p>
+<p>它如果搭配<code>top</code>、<code>bottom</code>、<code>left</code>、<code>right</code>这四个属性一起使用，表示元素的初始位置是基于视口计算的，否则初始位置就是元素的默认位置。</p>
+<h2 id="sticky-属性值"><a href="#sticky-属性值" class="headerlink" title="sticky 属性值"></a>sticky 属性值</h2><p><code>sticky</code>跟前面四个属性值都不一样，它会产生动态效果，很像<code>relative</code>和<code>fixed</code>的结合：一些时候是<code>relative</code>定位（定位参照物是自身默认位置），另一些时候自动变成<code>fixed</code>定位（定位参照物是视口）。</p>
+<p>因此，它能够形成”动态固定”的效果。比如，网页的搜索工具栏，初始加载时在自己的默认位置（<code>relative</code>定位）。页面向下滚动时，工具栏变成固定位置，始终停留在页面头部（<code>fixed</code>定位）。等到页面重新向上滚动回到原位，工具栏也会回到默认位置。</p>
+<p><code>sticky</code>生效的前提是，必须搭配<code>top</code>、<code>bottom</code>、<code>left</code>、<code>right</code>这四个属性一起使用，不能省略，否则等同于<code>relative</code>定位，不产生”动态固定”的效果。原因是这四个属性用来定义”偏移距离”，浏览器把它当作<code>sticky</code>的生效门槛。</p>
+<p>它的具体规则是，当页面滚动，父元素开始脱离视口时（即部分不可见），只要与<code>sticky</code>元素的距离达到生效门槛，<code>relative</code>定位自动切换为<code>fixed</code>定位</p>
+<p>等到父元素完全脱离视口时（即完全不可见），<code>fixed</code>定位自动切换回<code>relative</code>定位。</p>
+<h2 id="定位元素特性变化"><a href="#定位元素特性变化" class="headerlink" title="定位元素特性变化"></a>定位元素特性变化</h2><p><code>position</code>属性值 不为 <code>static</code>, 即为定位元素</p>
+<ul>
+<li><p>对于<code>relative</code>相对定位元素, 开启相对定位之后, 元素特性不发生任何改变</p>
+</li>
+<li><p>对于<code>absolute</code>, <code>fixed</code>元素</p>
+<ul>
+<li><p>元素会脱离文档流,不在文档流中占据位置</p>
+</li>
+<li><p>块元素如果不设置宽度, 宽度会由内容撑开</p>
+</li>
+<li><p>行内元素可以设置宽高了</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h2><ul>
+<li><p>当元素开启定位以后就可以设置 z-index 这个属性。</p>
+</li>
+<li><p>z-index 可以指定一个整数作为参数，值越大元素显示的优先级越高，也就是 z-index 值较大的元素会显示在网页的最上层。</p>
+</li>
+</ul>
+<h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><h2 id="浮动：float"><a href="#浮动：float" class="headerlink" title="浮动：float"></a>浮动：float</h2><p>左浮动：float: right;</p>
+<p>又浮动：float: left;</p>
+<h3 id="当浮动元素与文本有交集的时候"><a href="#当浮动元素与文本有交集的时候" class="headerlink" title="当浮动元素与文本有交集的时候"></a>当浮动元素与文本有交集的时候</h3><p>不再占据文档流,下方元素会上移,和浮动元素产生交集.</p>
+<p>因为文字不和浮动元素重叠,所以文字会环绕在浮动元素周围</p>
+<h3 id="浮动元素脱离了文档流-浮动的影响"><a href="#浮动元素脱离了文档流-浮动的影响" class="headerlink" title="浮动元素脱离了文档流(浮动的影响)"></a>浮动元素脱离了文档流(浮动的影响)</h3><p>脱离文档流是指：脱离本该在文档中的位置, 他的父容器在去计算宽高的时候，发现不了浮动元素。即父容器不会被里面的浮动元素撑开；</p>
+<h3 id="块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现"><a href="#块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现" class="headerlink" title="块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现"></a>块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现</h3><p>浮动元素不指定宽度,宽度由内容撑开</p>
+<h2 id="清除“浮动”影响"><a href="#清除“浮动”影响" class="headerlink" title="清除“浮动”影响"></a>清除“浮动”影响</h2><h3 id="为什么要清除浮动"><a href="#为什么要清除浮动" class="headerlink" title="为什么要清除浮动"></a>为什么要清除浮动</h3><p>浮动元素无法撑起父元素高度,会导致父元素高度计算时出现问题,对后续元素位置产生影响</p>
+<h3 id="清除浮动的方法"><a href="#清除浮动的方法" class="headerlink" title="清除浮动的方法"></a>清除浮动的方法</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*第一种方式:严格指定父元素高度</span></span><br><span class="line"><span class="comment">   第二种方式:给父元素添加overflow:hidden;</span></span><br><span class="line"><span class="comment">   第三种方式:在所有浮动元素末尾追加一个空的块元素(借助伪元素),对其设置clear:both;*/</span></span><br><span class="line"><span class="comment">/*overflow:hidden;*/</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以后我们想去实现块元素水平排列，就有了两种方法：</p>
+<ul>
+<li><p>第一:<code>inline-block</code>——适合子内容不多的元素水平排列。但要注意缝隙问题，以及对齐问题；</p>
+</li>
+<li><p>第二:<code>float</code>——没缝隙问题，适合稍大的布局。但需要解决的问题是父元素不会被撑开而导致的问题。</p>
+</li>
+</ul>
+<h1 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h1><p>一个盒子我们会分成几个部分：</p>
+<ul>
+<li><p>内容区(content)</p>
+</li>
+<li><p>内边距(padding)</p>
+</li>
+<li><p>边框(border)</p>
+</li>
+<li><p>外边距(margin)</p>
+</li>
+</ul>
+<p>content<br>内容区指的是盒子中放置内容的区域，也就是元素中的文本内容，子元素都是存在于内容区中的。</p>
+<p>如果没有为元素设置内边距和边框，则内容区大小默认和盒子大小是一致的。</p>
+<p>通过width和height两个属性可以设置内容区的大小。</p>
+<p>padding<br>padding:10px 20px 30px 40px; 这样会设置元素的上、右、下、左四个方向的内边距。<br>padding:10px 20px 30px; 分别指定上、左右、下四个方向的内边距。<br>padding:10px 20px; 分别指定上下、左右四个方向的内边距。<br>padding:10px; 同时指定上左右下四个方向的内边距。<br>同时在 css 中还提供了 padding-top、padding-left、padding-right、padding-bottom 分别用来指定四个方向的内边距。<br>改变元素的大小。</p>
+<h3 id="border"><a href="#border" class="headerlink" title="border"></a>border</h3><ul>
+<li><p>可以在元素周围创建边框，边框是元素可见框的最外部。</p>
+</li>
+<li><p><code>border:1px solid red;</code> 分别指定了边框的宽度、颜色和样式，是一种缩写：<code>border-width border-style border-color</code>。</p>
+</li>
+<li><p><code>border-style:</code> <code>none (默认) / dashed(虚线) / dotted（点） / solid(实线) / double(双实线)</code>。</p>
+</li>
+<li><p>可以单独设置某一条边框：<code>border-right: 20px solid blue;</code></p>
+</li>
+<li><p>改变元素的大小。</p>
+</li>
+</ul>
+<h3 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h3><ul>
+<li><p>设置方法和<code>padding</code>类似，同样也提供了四个方向的 <code>margin-top/margin-right/margin-bottom/margin-left</code>。</p>
+</li>
+<li><p><code>margin: xxx auto;</code>可以使块状元素水平居中。</p>
+</li>
+<li><p><code>嵌套崩塌</code>：两个盒子发生嵌套的时候，给子类设置 margin 会给父类造成一种崩塌现象，子类元素的 margin-top 没有效果，而是直接作用到父类元素。</p>
+</li>
+</ul>
+<p>解决方案：</p>
+<ol>
+<li><p>父类<code> </code><strong>overflow: hidden;</strong></p>
+</li>
+<li><p>父类 设置极小的 padding 或者 border；</p>
+</li>
+</ol>
+<ul>
+<li><p><code>margin重叠</code>： 如果垂直方向上两个块状元素同时设置了 margin-bottom 和 margin-top，那么这两个值将会发生重叠，不会累加，哪个值大用哪个。</p>
+</li>
+<li><p>margin-top/margin-bottom 对于行内元素无效。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">  width: <span class="number">200</span>px;</span><br><span class="line">        height: <span class="number">200</span>px;</span><br><span class="line">        background-color: red;</span><br><span class="line">        <span class="comment">/*margin: 100px;</span></span><br><span class="line"><span class="comment">        margin-top: 200px;*/</span></span><br><span class="line">        <span class="comment">/*d2将会左右居中*/</span></span><br><span class="line">        margin: <span class="number">100</span>px auto;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;!-- ======================= --&gt;</span><br><span class="line">&lt;!-- 当两个盒子发生嵌套的时候，给子类设置maring会给父类造成一种崩塌现象，子类的margin-top没有效果，而直接作用到父类 --&gt;</span><br><span class="line">&lt;!-- 解决方案： <span class="number">1.</span> 父类  overflow: hidden</span><br><span class="line">               <span class="number">2.</span> 父类 设置极小的padding --&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;box&quot;</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;inner-box&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;hr /&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 如果垂直两个块状元素同时设置了margin-bottom和margin-top,那么这两个值将会发生重叠,不会累加，哪个值大用哪个 --&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;box2&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;box3&quot;</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h1 id="权重和表现形式"><a href="#权重和表现形式" class="headerlink" title="权重和表现形式"></a>权重和表现形式</h1><ul>
+<li><p>行内样式 &gt; <code>id</code> 选择器 &gt; <code>class</code> 选择器 &gt;标签选择器</p>
+</li>
+<li><p>复杂选择器权重计算</p>
+<ul>
+<li><p>行内样式 1000</p>
+</li>
+<li><p>id 选择器 100</p>
+</li>
+<li><p>class 选择器 10</p>
+</li>
+<li><p>标签选择器 1</p>
+</li>
+<li><p>通配符/继承属性 0</p>
+</li>
+</ul>
+</li>
+<li><p>如果两个选择器是一样的，后写的生效。</p>
+</li>
+<li><p>如果写了相同的选择器，希望某个选择器权重更高，添加 <code>class</code> 类名，使用交集选择器即可。</p>
+</li>
+</ul>
+<h2 id="标签的表现形式"><a href="#标签的表现形式" class="headerlink" title="标签的表现形式"></a>标签的表现形式</h2><h2 id="块状标签"><a href="#块状标签" class="headerlink" title="块状标签"></a>块状标签</h2><p>比如：<code>div</code> <code>p</code> <code>h1~h6</code> <code>form</code> <code>table</code> <code>hr</code> <code>br</code> <code>ul&gt;li</code> <code>ol&gt;li</code> <code>dl&gt;dt/dd</code></p>
+<ul>
+<li><p>设置宽高有效</p>
+</li>
+<li><p>独占一行，换行展示。</p>
+</li>
+<li><p>不写宽度时。宽度是父元素（剩余）宽度的100%。</p>
+</li>
+</ul>
+<h2 id="行内块标签"><a href="#行内块标签" class="headerlink" title="行内块标签"></a>行内块标签</h2><p>比如: <code>input</code> <code>select</code> <code>img</code> <code>button</code></p>
+<ul>
+<li><p>设置宽高有效。</p>
+</li>
+<li><p>同行展示。</p>
+</li>
+<li><p>不写宽度时。宽度由内容撑开。</p>
+</li>
+</ul>
+<h2 id="行内标签"><a href="#行内标签" class="headerlink" title="行内标签"></a>行内标签</h2><p>比如：<code>a</code> <code>span</code> <code>strong</code> <code>del</code> <code>ins</code> <code>em</code> <code>i</code> <code>b</code></p>
+<ul>
+<li><p>设置宽高无效。</p>
+</li>
+<li><p>同行展示。</p>
+</li>
+<li><p>不写宽度时。宽度由内容撑开。</p>
+</li>
+</ul>
+<h2 id="display"><a href="#display" class="headerlink" title="display"></a>display</h2><p><code>display:</code> 修改元素的性质。</p>
+<ul>
+<li><p><code>block</code>：设置元素为块元素</p>
+</li>
+<li><p><code>inline</code>：设置元素为行内元素</p>
+</li>
+<li><p><code>inline-block</code>：设置元素为行内块元素</p>
+</li>
+<li><p>转换的必要性：比如可以把<code>a</code>标签转换为块状元素，设置宽高，使用户可点击的区域增大，进而实现一个按钮的样式。</p>
+</li>
+</ul>
+<h1 id="图文对齐"><a href="#图文对齐" class="headerlink" title="图文对齐"></a>图文对齐</h1><h2 id="vertical-align"><a href="#vertical-align" class="headerlink" title="vertical-align"></a>vertical-align</h2><p>设置对象内容的垂直对齐方式。是容器中元素相对于内容的显示</p>
+<p>简单点可以理解为行内块元素(img)与文字的对齐方式</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">p&#123; </span><br><span class="line"></span><br><span class="line">  background:orange;</span><br><span class="line">&#125;</span><br><span class="line">img&#123;</span><br><span class="line">  width:<span class="number">100</span>px; </span><br><span class="line">  vertical-align: middle; </span><br><span class="line">&#125;</span><br><span class="line">&lt;p&gt;<span class="built_in">this</span> is paragraph!!!<span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;images/boy.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span>&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">TanKai</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/child/2021/05/08/CSS%E8%B6%85%E7%A5%9E%E4%B9%8B%E8%B7%AF/">http://example.com/child/2021/05/08/CSS%E8%B6%85%E7%A5%9E%E4%B9%8B%E8%B7%AF/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">TanKai</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">前端笔记</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/05/08/HTML5%E8%B6%85%E7%A5%9E%E4%B9%8B%E8%B7%AF/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-08
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            TanKai
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/04/26/html%E8%B6%85%E7%A5%9E%E4%B9%8B%E8%B7%AF/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="前端之-html超神之路">
+                        
+                        <span class="card-title">前端之-html超神之路</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            TanKai
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">前端笔记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2347077580"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='list'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">TanKai</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+    <a href="mailto:2217733280@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2217733280" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2217733280" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+    <!-- 动态线条背景 -->
+    <script type="text/javascript"
+    color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+    </script>
+    <script>
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script>
+</body>
+
+</html>
