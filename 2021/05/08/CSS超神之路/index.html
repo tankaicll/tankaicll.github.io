@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="前端之-HTML5超神之路, HTML, CSS, JavaScript, JQuery, React, Vue.js等">
+    <meta name="keywords" content="前端之-CSS超神之路, HTML, CSS, JavaScript, JQuery, React, Vue.js等">
     <meta name="description" content="Web初学者,专注前端，分享音乐,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>前端之-HTML5超神之路 | Tkai-Blog</title>
+    <title>前端之-CSS超神之路 | Tkai-Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">前端之-HTML5超神之路</h1>
+                    <h1 class="description center-align post-title">前端之-CSS超神之路</h1>
                 </div>
             </div>
         </div>
@@ -464,7 +464,40 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="字体文本系列"><a href="#字体文本系列" class="headerlink" title="字体文本系列"></a>字体文本系列</h1><h3 id="字体系列属性"><a href="#字体系列属性" class="headerlink" title="字体系列属性"></a>字体系列属性</h3><table>
+                <h1 id="CSS-选择器"><a href="#CSS-选择器" class="headerlink" title="CSS 选择器"></a>CSS 选择器</h1><p>简单选择器</p>
+<ul>
+<li><p>标签选择器 : 可以根据标签的名字来从页面中选取指定的元素。</p>
+</li>
+<li><p>id 选择器 : 可以根据元素的id属性值选取元素。</p>
+</li>
+<li><p>class 选择器 : 可以根据元素的class属性值选取元素。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 标签选择器 */</span></span><br><span class="line">   p&#123;</span><br><span class="line">       color：red；</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="comment">/* id选择器 */</span></span><br><span class="line">   #h3&#123;</span><br><span class="line">       color: orange;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="comment">/* class选择器 */</span></span><br><span class="line">   .header&#123;</span><br><span class="line">       color:blue;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<p>复杂选择器</p>
+<ul>
+<li><p>交集选择器 : 可以同时使用多个选择器，这样可以选择同时满足多个选择器的元素。</p>
+</li>
+<li><p>并集选择器 ： 可以同时使用多个选择器，多个选择器将被同时应用指定的样式。</p>
+</li>
+<li><p>后代选择器 : 可以根据标签的关系，为处在元素内部的后代元素设置样式。</p>
+</li>
+<li><p>通配符 : 可以同时选中页面中的所有元素</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*标签p 和.p1的交集*/</span></span><br><span class="line">p.p1 &#123;</span><br><span class="line">    color: red;</span><br><span class="line">&#125;</span><br><span class="line">.p2.danger &#123;</span><br><span class="line">    color: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*并集选择器 都被选中*/</span></span><br><span class="line">.p1,</span><br><span class="line">.p2 &#123;</span><br><span class="line">    font-size: <span class="number">30</span>px;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*后代选择器 空格*/</span></span><br><span class="line">.p3 a &#123;</span><br><span class="line">    color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/** 通配符 选择所有标签*/</span></span><br><span class="line">* &#123;</span><br><span class="line">    <span class="comment">/*background-color: pink;*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<p>伪类选择器</p>
+<ul>
+<li><p>:hover 鼠标进入元素时</p>
+</li>
+<li><p>:focus 输入框获得焦点时</p>
+</li>
+</ul>
+<h1 id="字体文本系列"><a href="#字体文本系列" class="headerlink" title="字体文本系列"></a>字体文本系列</h1><h3 id="字体系列属性"><a href="#字体系列属性" class="headerlink" title="字体系列属性"></a>字体系列属性</h3><table>
 <thead>
 <tr>
 <th>属性名称</th>
@@ -569,6 +602,121 @@
 </li>
 </ul>
 <h3 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h3><p><code>line-height</code>用于设置行高，行高越大则行间距越大。</p>
+<h1 id="权重和表现形式"><a href="#权重和表现形式" class="headerlink" title="权重和表现形式"></a>权重和表现形式</h1><ul>
+<li><p>行内样式 &gt; <code>id</code> 选择器 &gt; <code>class</code> 选择器 &gt;标签选择器</p>
+</li>
+<li><p>复杂选择器权重计算</p>
+<ul>
+<li><p>行内样式 1000</p>
+</li>
+<li><p>id 选择器 100</p>
+</li>
+<li><p>class 选择器 10</p>
+</li>
+<li><p>标签选择器 1</p>
+</li>
+<li><p>通配符/继承属性 0</p>
+</li>
+</ul>
+</li>
+<li><p>如果两个选择器是一样的，后写的生效。</p>
+</li>
+<li><p>如果写了相同的选择器，希望某个选择器权重更高，添加 <code>class</code> 类名，使用交集选择器即可。</p>
+</li>
+</ul>
+<h2 id="标签的表现形式"><a href="#标签的表现形式" class="headerlink" title="标签的表现形式"></a>标签的表现形式</h2><h2 id="块状标签"><a href="#块状标签" class="headerlink" title="块状标签"></a>块状标签</h2><p>比如：<code>div</code> <code>p</code> <code>h1~h6</code> <code>form</code> <code>table</code> <code>hr</code> <code>br</code> <code>ul&gt;li</code> <code>ol&gt;li</code> <code>dl&gt;dt/dd</code></p>
+<ul>
+<li><p>设置宽高有效</p>
+</li>
+<li><p>独占一行，换行展示。</p>
+</li>
+<li><p>不写宽度时。宽度是父元素（剩余）宽度的100%。</p>
+</li>
+</ul>
+<h2 id="行内块标签"><a href="#行内块标签" class="headerlink" title="行内块标签"></a>行内块标签</h2><p>比如: <code>input</code> <code>select</code> <code>img</code> <code>button</code></p>
+<ul>
+<li><p>设置宽高有效。</p>
+</li>
+<li><p>同行展示。</p>
+</li>
+<li><p>不写宽度时。宽度由内容撑开。</p>
+</li>
+</ul>
+<h2 id="行内标签"><a href="#行内标签" class="headerlink" title="行内标签"></a>行内标签</h2><p>比如：<code>a</code> <code>span</code> <code>strong</code> <code>del</code> <code>ins</code> <code>em</code> <code>i</code> <code>b</code></p>
+<ul>
+<li><p>设置宽高无效。</p>
+</li>
+<li><p>同行展示。</p>
+</li>
+<li><p>不写宽度时。宽度由内容撑开。</p>
+</li>
+</ul>
+<h2 id="display"><a href="#display" class="headerlink" title="display"></a>display</h2><p><code>display:</code> 修改元素的性质。</p>
+<ul>
+<li><p><code>block</code>：设置元素为块元素</p>
+</li>
+<li><p><code>inline</code>：设置元素为行内元素</p>
+</li>
+<li><p><code>inline-block</code>：设置元素为行内块元素</p>
+</li>
+<li><p>转换的必要性：比如可以把<code>a</code>标签转换为块状元素，设置宽高，使用户可点击的区域增大，进而实现一个按钮的样式。</p>
+</li>
+</ul>
+<h1 id="图文对齐"><a href="#图文对齐" class="headerlink" title="图文对齐"></a>图文对齐</h1><h2 id="vertical-align"><a href="#vertical-align" class="headerlink" title="vertical-align"></a>vertical-align</h2><p>设置对象内容的垂直对齐方式。是容器中元素相对于内容的显示</p>
+<p>简单点可以理解为行内块元素(img)与文字的对齐方式</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">p&#123; </span><br><span class="line"></span><br><span class="line">  background:orange;</span><br><span class="line">&#125;</span><br><span class="line">img&#123;</span><br><span class="line">  width:<span class="number">100</span>px; </span><br><span class="line">  vertical-align: middle; </span><br><span class="line">&#125;</span><br><span class="line">&lt;p&gt;<span class="built_in">this</span> is paragraph!!!<span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;images/boy.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span>&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h1><p>一个盒子我们会分成几个部分：</p>
+<ul>
+<li><p>内容区(content)</p>
+</li>
+<li><p>内边距(padding)</p>
+</li>
+<li><p>边框(border)</p>
+</li>
+<li><p>外边距(margin)</p>
+</li>
+</ul>
+<p>content<br>内容区指的是盒子中放置内容的区域，也就是元素中的文本内容，子元素都是存在于内容区中的。</p>
+<p>如果没有为元素设置内边距和边框，则内容区大小默认和盒子大小是一致的。</p>
+<p>通过width和height两个属性可以设置内容区的大小。</p>
+<p>padding<br>padding:10px 20px 30px 40px; 这样会设置元素的上、右、下、左四个方向的内边距。<br>padding:10px 20px 30px; 分别指定上、左右、下四个方向的内边距。<br>padding:10px 20px; 分别指定上下、左右四个方向的内边距。<br>padding:10px; 同时指定上左右下四个方向的内边距。<br>同时在 css 中还提供了 padding-top、padding-left、padding-right、padding-bottom 分别用来指定四个方向的内边距。<br>改变元素的大小。</p>
+<h3 id="border"><a href="#border" class="headerlink" title="border"></a>border</h3><ul>
+<li><p>可以在元素周围创建边框，边框是元素可见框的最外部。</p>
+</li>
+<li><p><code>border:1px solid red;</code> 分别指定了边框的宽度、颜色和样式，是一种缩写：<code>border-width border-style border-color</code>。</p>
+</li>
+<li><p><code>border-style:</code> <code>none (默认) / dashed(虚线) / dotted（点） / solid(实线) / double(双实线)</code>。</p>
+</li>
+<li><p>可以单独设置某一条边框：<code>border-right: 20px solid blue;</code></p>
+</li>
+<li><p>改变元素的大小。</p>
+</li>
+</ul>
+<h3 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h3><ul>
+<li><p>设置方法和<code>padding</code>类似，同样也提供了四个方向的 <code>margin-top/margin-right/margin-bottom/margin-left</code>。</p>
+</li>
+<li><p><code>margin: xxx auto;</code>可以使块状元素水平居中。</p>
+</li>
+<li><p><code>嵌套崩塌</code>：两个盒子发生嵌套的时候，给子类设置 margin 会给父类造成一种崩塌现象，子类元素的 margin-top 没有效果，而是直接作用到父类元素。</p>
+</li>
+</ul>
+<p>解决方案：</p>
+<ol>
+<li><p>父类<code> </code><strong>overflow: hidden;</strong></p>
+</li>
+<li><p>父类 设置极小的 padding 或者 border；</p>
+</li>
+</ol>
+<ul>
+<li><p><code>margin重叠</code>： 如果垂直方向上两个块状元素同时设置了 margin-bottom 和 margin-top，那么这两个值将会发生重叠，不会累加，哪个值大用哪个。</p>
+</li>
+<li><p>margin-top/margin-bottom 对于行内元素无效。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">  width: <span class="number">200</span>px;</span><br><span class="line">        height: <span class="number">200</span>px;</span><br><span class="line">        background-color: red;</span><br><span class="line">        <span class="comment">/*margin: 100px;</span></span><br><span class="line"><span class="comment">        margin-top: 200px;*/</span></span><br><span class="line">        <span class="comment">/*d2将会左右居中*/</span></span><br><span class="line">        margin: <span class="number">100</span>px auto;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;!-- ======================= --&gt;</span><br><span class="line">&lt;!-- 当两个盒子发生嵌套的时候，给子类设置maring会给父类造成一种崩塌现象，子类的margin-top没有效果，而直接作用到父类 --&gt;</span><br><span class="line">&lt;!-- 解决方案： <span class="number">1.</span> 父类  overflow: hidden</span><br><span class="line">               <span class="number">2.</span> 父类 设置极小的padding --&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;box&quot;</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;inner-box&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;hr /&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 如果垂直两个块状元素同时设置了margin-bottom和margin-top,那么这两个值将会发生重叠,不会累加，哪个值大用哪个 --&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;box2&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;box3&quot;</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
 <h1 id="背景与溢出隐藏"><a href="#背景与溢出隐藏" class="headerlink" title="背景与溢出隐藏"></a>背景与溢出隐藏</h1><h2 id="背景图片属性"><a href="#背景图片属性" class="headerlink" title="背景图片属性"></a>背景图片属性</h2><table>
 <thead>
 <tr>
@@ -642,8 +790,22 @@
 </li>
 </ul>
 <h2 id="溢出的文字以省略号显示"><a href="#溢出的文字以省略号显示" class="headerlink" title="溢出的文字以省略号显示"></a>溢出的文字以省略号显示</h2>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">p&#123; </span><br><span class="line"></span><br><span class="line">  height: <span class="number">20</span>px; </span><br><span class="line"></span><br><span class="line">  width:<span class="number">100</span>px; </span><br><span class="line"></span><br><span class="line">  background:#ddd; </span><br><span class="line"></span><br><span class="line">  white-space: nowrap; <span class="comment">//让文字在同一行显示，不换行 </span></span><br><span class="line"></span><br><span class="line">  overflow: hidden; <span class="comment">//溢出部分隐藏 </span></span><br><span class="line"></span><br><span class="line">  text-overflow: ellipsis; <span class="comment">//文字溢出部分省略号显示 </span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;这段文字多余的部分会显示为省略号&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="浮动：float"><a href="#浮动：float" class="headerlink" title="浮动：float"></a>浮动：float</h2><p>左浮动：float: right;</p>
+<p>又浮动：float: left;</p>
+<h3 id="当浮动元素与文本有交集的时候"><a href="#当浮动元素与文本有交集的时候" class="headerlink" title="当浮动元素与文本有交集的时候"></a>当浮动元素与文本有交集的时候</h3><p>不再占据文档流,下方元素会上移,和浮动元素产生交集.</p>
+<p>因为文字不和浮动元素重叠,所以文字会环绕在浮动元素周围</p>
+<h3 id="浮动元素脱离了文档流-浮动的影响"><a href="#浮动元素脱离了文档流-浮动的影响" class="headerlink" title="浮动元素脱离了文档流(浮动的影响)"></a>浮动元素脱离了文档流(浮动的影响)</h3><p>脱离文档流是指：脱离本该在文档中的位置, 他的父容器在去计算宽高的时候，发现不了浮动元素。即父容器不会被里面的浮动元素撑开；</p>
+<h3 id="块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现"><a href="#块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现" class="headerlink" title="块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现"></a>块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现</h3><p>浮动元素不指定宽度,宽度由内容撑开</p>
+<h2 id="清除“浮动”影响"><a href="#清除“浮动”影响" class="headerlink" title="清除“浮动”影响"></a>清除“浮动”影响</h2><h3 id="为什么要清除浮动"><a href="#为什么要清除浮动" class="headerlink" title="为什么要清除浮动"></a>为什么要清除浮动</h3><p>浮动元素无法撑起父元素高度,会导致父元素高度计算时出现问题,对后续元素位置产生影响</p>
+<h3 id="清除浮动的方法"><a href="#清除浮动的方法" class="headerlink" title="清除浮动的方法"></a>清除浮动的方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*第一种方式:严格指定父元素高度</span></span><br><span class="line"><span class="comment">   第二种方式:给父元素添加overflow:hidden;</span></span><br><span class="line"><span class="comment">   第三种方式:在所有浮动元素末尾追加一个空的块元素(借助伪元素),对其设置clear:both;*/</span></span><br><span class="line"><span class="comment">/*overflow:hidden;*/</span></span><br></pre></td></tr></table></figure>
 
-
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以后我们想去实现块元素水平排列，就有了两种方法：</p>
+<ul>
+<li><p>第一:<code>inline-block</code>——适合子内容不多的元素水平排列。但要注意缝隙问题，以及对齐问题；</p>
+</li>
+<li><p>第二:<code>float</code>——没缝隙问题，适合稍大的布局。但需要解决的问题是父元素不会被撑开而导致的问题。</p>
+</li>
+</ul>
 <h1 id="定位布局"><a href="#定位布局" class="headerlink" title="定位布局"></a>定位布局</h1><h2 id="position-属性的作用"><a href="#position-属性的作用" class="headerlink" title="position 属性的作用"></a>position 属性的作用</h2><p><code>position</code>属性用来指定一个元素在网页上的位置，一共有5种定位方式，即<code>position</code>属性主要有五个值。</p>
 <p>元素定位之后，需要通过设置 <code>left/right</code> 和 <code>top/bottom</code> 值对元素定位。</p>
 <ul>
@@ -694,24 +856,24 @@
 <li><p>z-index 可以指定一个整数作为参数，值越大元素显示的优先级越高，也就是 z-index 值较大的元素会显示在网页的最上层。</p>
 </li>
 </ul>
-<h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><h2 id="浮动：float"><a href="#浮动：float" class="headerlink" title="浮动：float"></a>浮动：float</h2><p>左浮动：float: right;</p>
+<h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><h2 id="浮动：float-1"><a href="#浮动：float-1" class="headerlink" title="浮动：float"></a>浮动：float</h2><p>左浮动：float: right;</p>
 <p>又浮动：float: left;</p>
-<h3 id="当浮动元素与文本有交集的时候"><a href="#当浮动元素与文本有交集的时候" class="headerlink" title="当浮动元素与文本有交集的时候"></a>当浮动元素与文本有交集的时候</h3><p>不再占据文档流,下方元素会上移,和浮动元素产生交集.</p>
+<h3 id="当浮动元素与文本有交集的时候-1"><a href="#当浮动元素与文本有交集的时候-1" class="headerlink" title="当浮动元素与文本有交集的时候"></a>当浮动元素与文本有交集的时候</h3><p>不再占据文档流,下方元素会上移,和浮动元素产生交集.</p>
 <p>因为文字不和浮动元素重叠,所以文字会环绕在浮动元素周围</p>
-<h3 id="浮动元素脱离了文档流-浮动的影响"><a href="#浮动元素脱离了文档流-浮动的影响" class="headerlink" title="浮动元素脱离了文档流(浮动的影响)"></a>浮动元素脱离了文档流(浮动的影响)</h3><p>脱离文档流是指：脱离本该在文档中的位置, 他的父容器在去计算宽高的时候，发现不了浮动元素。即父容器不会被里面的浮动元素撑开；</p>
-<h3 id="块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现"><a href="#块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现" class="headerlink" title="块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现"></a>块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现</h3><p>浮动元素不指定宽度,宽度由内容撑开</p>
-<h2 id="清除“浮动”影响"><a href="#清除“浮动”影响" class="headerlink" title="清除“浮动”影响"></a>清除“浮动”影响</h2><h3 id="为什么要清除浮动"><a href="#为什么要清除浮动" class="headerlink" title="为什么要清除浮动"></a>为什么要清除浮动</h3><p>浮动元素无法撑起父元素高度,会导致父元素高度计算时出现问题,对后续元素位置产生影响</p>
-<h3 id="清除浮动的方法"><a href="#清除浮动的方法" class="headerlink" title="清除浮动的方法"></a>清除浮动的方法</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*第一种方式:严格指定父元素高度</span></span><br><span class="line"><span class="comment">   第二种方式:给父元素添加overflow:hidden;</span></span><br><span class="line"><span class="comment">   第三种方式:在所有浮动元素末尾追加一个空的块元素(借助伪元素),对其设置clear:both;*/</span></span><br><span class="line"><span class="comment">/*overflow:hidden;*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="浮动元素脱离了文档流-浮动的影响-1"><a href="#浮动元素脱离了文档流-浮动的影响-1" class="headerlink" title="浮动元素脱离了文档流(浮动的影响)"></a>浮动元素脱离了文档流(浮动的影响)</h3><p>脱离文档流是指：脱离本该在文档中的位置, 他的父容器在去计算宽高的时候，发现不了浮动元素。即父容器不会被里面的浮动元素撑开；</p>
+<h3 id="块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现-1"><a href="#块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现-1" class="headerlink" title="块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现"></a>块级元素浮动宽度收缩，行内元素浮动以块级特性去呈现</h3><p>浮动元素不指定宽度,宽度由内容撑开</p>
+<h2 id="清除“浮动”影响-1"><a href="#清除“浮动”影响-1" class="headerlink" title="清除“浮动”影响"></a>清除“浮动”影响</h2><h3 id="为什么要清除浮动-1"><a href="#为什么要清除浮动-1" class="headerlink" title="为什么要清除浮动"></a>为什么要清除浮动</h3><p>浮动元素无法撑起父元素高度,会导致父元素高度计算时出现问题,对后续元素位置产生影响</p>
+<h3 id="清除浮动的方法-1"><a href="#清除浮动的方法-1" class="headerlink" title="清除浮动的方法"></a>清除浮动的方法</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*第一种方式:严格指定父元素高度</span></span><br><span class="line"><span class="comment">   第二种方式:给父元素添加overflow:hidden;</span></span><br><span class="line"><span class="comment">   第三种方式:在所有浮动元素末尾追加一个空的块元素(借助伪元素),对其设置clear:both;*/</span></span><br><span class="line"><span class="comment">/*overflow:hidden;*/</span></span><br></pre></td></tr></table></figure>
 
 
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以后我们想去实现块元素水平排列，就有了两种方法：</p>
+<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p>以后我们想去实现块元素水平排列，就有了两种方法：</p>
 <ul>
 <li><p>第一:<code>inline-block</code>——适合子内容不多的元素水平排列。但要注意缝隙问题，以及对齐问题；</p>
 </li>
 <li><p>第二:<code>float</code>——没缝隙问题，适合稍大的布局。但需要解决的问题是父元素不会被撑开而导致的问题。</p>
 </li>
 </ul>
-<h1 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h1><p>一个盒子我们会分成几个部分：</p>
+<h1 id="盒子模型-1"><a href="#盒子模型-1" class="headerlink" title="盒子模型"></a>盒子模型</h1><p>一个盒子我们会分成几个部分：</p>
 <ul>
 <li><p>内容区(content)</p>
 </li>
@@ -726,7 +888,7 @@
 <p>如果没有为元素设置内边距和边框，则内容区大小默认和盒子大小是一致的。</p>
 <p>通过width和height两个属性可以设置内容区的大小。</p>
 <p>padding<br>padding:10px 20px 30px 40px; 这样会设置元素的上、右、下、左四个方向的内边距。<br>padding:10px 20px 30px; 分别指定上、左右、下四个方向的内边距。<br>padding:10px 20px; 分别指定上下、左右四个方向的内边距。<br>padding:10px; 同时指定上左右下四个方向的内边距。<br>同时在 css 中还提供了 padding-top、padding-left、padding-right、padding-bottom 分别用来指定四个方向的内边距。<br>改变元素的大小。</p>
-<h3 id="border"><a href="#border" class="headerlink" title="border"></a>border</h3><ul>
+<h3 id="border-1"><a href="#border-1" class="headerlink" title="border"></a>border</h3><ul>
 <li><p>可以在元素周围创建边框，边框是元素可见框的最外部。</p>
 </li>
 <li><p><code>border:1px solid red;</code> 分别指定了边框的宽度、颜色和样式，是一种缩写：<code>border-width border-style border-color</code>。</p>
@@ -738,7 +900,7 @@
 <li><p>改变元素的大小。</p>
 </li>
 </ul>
-<h3 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h3><ul>
+<h3 id="margin-1"><a href="#margin-1" class="headerlink" title="margin"></a>margin</h3><ul>
 <li><p>设置方法和<code>padding</code>类似，同样也提供了四个方向的 <code>margin-top/margin-right/margin-bottom/margin-left</code>。</p>
 </li>
 <li><p><code>margin: xxx auto;</code>可以使块状元素水平居中。</p>
@@ -760,74 +922,12 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">  width: <span class="number">200</span>px;</span><br><span class="line">        height: <span class="number">200</span>px;</span><br><span class="line">        background-color: red;</span><br><span class="line">        <span class="comment">/*margin: 100px;</span></span><br><span class="line"><span class="comment">        margin-top: 200px;*/</span></span><br><span class="line">        <span class="comment">/*d2将会左右居中*/</span></span><br><span class="line">        margin: <span class="number">100</span>px auto;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;!-- ======================= --&gt;</span><br><span class="line">&lt;!-- 当两个盒子发生嵌套的时候，给子类设置maring会给父类造成一种崩塌现象，子类的margin-top没有效果，而直接作用到父类 --&gt;</span><br><span class="line">&lt;!-- 解决方案： <span class="number">1.</span> 父类  overflow: hidden</span><br><span class="line">               <span class="number">2.</span> 父类 设置极小的padding --&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;box&quot;</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;inner-box&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;hr /&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 如果垂直两个块状元素同时设置了margin-bottom和margin-top,那么这两个值将会发生重叠,不会累加，哪个值大用哪个 --&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;box2&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;box3&quot;</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
 
-</li>
-</ul>
-<h1 id="权重和表现形式"><a href="#权重和表现形式" class="headerlink" title="权重和表现形式"></a>权重和表现形式</h1><ul>
-<li><p>行内样式 &gt; <code>id</code> 选择器 &gt; <code>class</code> 选择器 &gt;标签选择器</p>
-</li>
-<li><p>复杂选择器权重计算</p>
-<ul>
-<li><p>行内样式 1000</p>
-</li>
-<li><p>id 选择器 100</p>
-</li>
-<li><p>class 选择器 10</p>
-</li>
-<li><p>标签选择器 1</p>
-</li>
-<li><p>通配符/继承属性 0</p>
-</li>
-</ul>
-</li>
-<li><p>如果两个选择器是一样的，后写的生效。</p>
-</li>
-<li><p>如果写了相同的选择器，希望某个选择器权重更高，添加 <code>class</code> 类名，使用交集选择器即可。</p>
-</li>
-</ul>
-<h2 id="标签的表现形式"><a href="#标签的表现形式" class="headerlink" title="标签的表现形式"></a>标签的表现形式</h2><h2 id="块状标签"><a href="#块状标签" class="headerlink" title="块状标签"></a>块状标签</h2><p>比如：<code>div</code> <code>p</code> <code>h1~h6</code> <code>form</code> <code>table</code> <code>hr</code> <code>br</code> <code>ul&gt;li</code> <code>ol&gt;li</code> <code>dl&gt;dt/dd</code></p>
-<ul>
-<li><p>设置宽高有效</p>
-</li>
-<li><p>独占一行，换行展示。</p>
-</li>
-<li><p>不写宽度时。宽度是父元素（剩余）宽度的100%。</p>
-</li>
-</ul>
-<h2 id="行内块标签"><a href="#行内块标签" class="headerlink" title="行内块标签"></a>行内块标签</h2><p>比如: <code>input</code> <code>select</code> <code>img</code> <code>button</code></p>
-<ul>
-<li><p>设置宽高有效。</p>
-</li>
-<li><p>同行展示。</p>
-</li>
-<li><p>不写宽度时。宽度由内容撑开。</p>
-</li>
-</ul>
-<h2 id="行内标签"><a href="#行内标签" class="headerlink" title="行内标签"></a>行内标签</h2><p>比如：<code>a</code> <code>span</code> <code>strong</code> <code>del</code> <code>ins</code> <code>em</code> <code>i</code> <code>b</code></p>
-<ul>
-<li><p>设置宽高无效。</p>
-</li>
-<li><p>同行展示。</p>
-</li>
-<li><p>不写宽度时。宽度由内容撑开。</p>
-</li>
-</ul>
-<h2 id="display"><a href="#display" class="headerlink" title="display"></a>display</h2><p><code>display:</code> 修改元素的性质。</p>
-<ul>
-<li><p><code>block</code>：设置元素为块元素</p>
-</li>
-<li><p><code>inline</code>：设置元素为行内元素</p>
-</li>
-<li><p><code>inline-block</code>：设置元素为行内块元素</p>
-</li>
-<li><p>转换的必要性：比如可以把<code>a</code>标签转换为块状元素，设置宽高，使用户可点击的区域增大，进而实现一个按钮的样式。</p>
-</li>
-</ul>
-<h1 id="图文对齐"><a href="#图文对齐" class="headerlink" title="图文对齐"></a>图文对齐</h1><h2 id="vertical-align"><a href="#vertical-align" class="headerlink" title="vertical-align"></a>vertical-align</h2><p>设置对象内容的垂直对齐方式。是容器中元素相对于内容的显示</p>
-<p>简单点可以理解为行内块元素(img)与文字的对齐方式</p>
- <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">p&#123; </span><br><span class="line"></span><br><span class="line">  background:orange;</span><br><span class="line">&#125;</span><br><span class="line">img&#123;</span><br><span class="line">  width:<span class="number">100</span>px; </span><br><span class="line">  vertical-align: middle; </span><br><span class="line">&#125;</span><br><span class="line">&lt;p&gt;<span class="built_in">this</span> is paragraph!!!<span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;images/boy.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span>&lt;/p&gt;</span><br></pre></td></tr></table></figure>
 
 
 
+
+</li>
+</ul>
 
             </div>
             <hr/>
@@ -1070,9 +1170,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="前端之-css超神之路">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="前端之-HTML5超神之路">
                         
-                        <span class="card-title">前端之-css超神之路</span>
+                        <span class="card-title">前端之-HTML5超神之路</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
